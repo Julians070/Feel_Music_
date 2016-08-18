@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Products</h1>
+<div class="col-md-12" id="imagenes">
+<table>
+<%= link_to 'New Product', new_product_path %>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td> <h4><%= product.title %></h4> <%= image_tag   product.cover.url(:medium) %><p><%= product.description %></p><%= link_to 'Show', product %><%= link_to 'Edit', edit_product_path(product) %><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+

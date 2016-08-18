@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :audios
+  resources :videos
+  resources :products
+
   get 'welcome/index'
 
   root 'welcome#index'

@@ -20,6 +20,7 @@ body {
 .row {
     padding-top: 55px;
 }
+
 nav.navbar {
     position: absolute;
     width: 100%;
@@ -88,6 +89,7 @@ nav.navbar {
 .page-header {
     text-align: center;
     font-family: 'Playfair Display', serif;
+
 }
 
 .img-portfolio {
@@ -102,6 +104,7 @@ nav.navbar {
 
 header.carousel {
     height: 75%;
+
 }
 
 header.carousel .item,
@@ -118,6 +121,7 @@ header.carousel .carousel-inner .item img{
 header.carousel .carousel-control {
     display: none;
 }
+
 
 header.carousel .fill {
     width: 100%;
@@ -167,6 +171,7 @@ footer {
 // ------ Variables --------
 // -------------------------
 
+
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
 
 
@@ -177,6 +182,7 @@ footer {
 }
 
 // Gallery de fotos en Home
+
 
 
 .portaFotos {
@@ -220,11 +226,13 @@ footer {
                 }
             }
         }
+
         a {
             height: 100%;
             width: 100%;
             display: inline-block;
             position: relative;
+
             transition: .5s ease-in-out;
             -webkit-transition: .5s ease-in-out;
             -moz-transition: .5s ease-in-out;
@@ -242,6 +250,7 @@ footer {
                     -moz-transition: .5s ease-in-out;
                     -o-transition: .5s ease-in-out;
                     -ms-transition: .5s ease-in-out;
+
                 }
                 .box_text {
                     display: inline-block;
@@ -300,6 +309,7 @@ footer {
 
 // Style for Modal
 
+
 .modal {
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
@@ -347,6 +357,7 @@ footer {
         }
     }
 }
+
 
 /* Responsive Styles */
 
