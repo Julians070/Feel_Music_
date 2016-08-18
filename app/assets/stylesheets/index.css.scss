@@ -1,0 +1,269 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+ 
+    position: relative;
+    padding: 0px;
+}
+
+nav.navbar {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0;
+    z-index: 5;
+}
+
+body {
+    //padding-top: 50px; /* Required padding for .navbar-
+    //fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-
+    fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+ 
+    height: 65%;
+
+    height: 50%;
+ 
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+ 
+header.carousel .carousel-control {
+    display: none;
+}
+
+ 
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+
+}
+
+.navbar-brand {
+    padding-top: 16px !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+
+
+.transition {
+    transition-duration: 5s;
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 5s;
+}
+
+
+
+// Portafolio de fotos en Home
+
+
+.portaFotos {
+    h2 {
+        font-family: 'Playfair Display', serif;
+    }
+    .item {
+        height: 200px;
+        padding: 5px;
+        transition: all 0.5s ease;
+        a {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            transition: all 0.5s ease;
+            &:hover {
+                transition: all 0.5s ease;
+                img {
+
+                }
+                .box_text {
+                    display: inline-block;
+                    position: absolute;
+                    background: rgba(0,0,0,.7);
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    left:0;
+                    padding: 30px 0;
+                    transition: all 0.5s ease;
+                    span {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        display: block;
+                        text-align: center;
+                        font-weight: 700;
+                        padding: 10px 0;
+                    }
+                    .enlace_modal {
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        padding: 20px;
+                        button {
+                            border: none;
+                            text-transform: uppercase;
+                            color:#fff;
+                            background: #7F0A0A;
+                            padding: 5px 15px;
+                            font-size: 14px;
+                            border-radius: 3px;
+                            &:hover {
+                                background: darken(#7F0A0A, 10%);
+                            }
+                        }
+                    }
+                    p {
+                        color: #fff;
+                        line-height: 20px;
+                    }
+                }
+            }
+            img {
+                position: relative;
+                height: 100%;
+                width: 100%;
+            }
+            .box_text {
+                display: none;
+            }
+        }
+    }
+}
+
+// Estilos para Modal
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .modal-dialog {
+        vertical-align: middle;
+        text-align: left;
+        display: inline-block;
+        .modal-content {
+            .modal-header {
+                .close {
+                    background: #7F0A0A;
+                    color: #fff;
+                    padding: 5px 8px;
+                    opacity: 1;
+                    margin-top: 0px;
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+            .modal-body {
+                padding: 1px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 0px;
+                }
+                p {
+                    margin: 0;
+                    padding: 10px;
+                    line-height: 20px;
+                }
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+@import 'bootstrap';
