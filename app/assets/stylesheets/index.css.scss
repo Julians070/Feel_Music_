@@ -60,6 +60,16 @@ nav.navbar {
         width: 100%;
         padding-top: 5px;
         .navbar-header {
+            button {
+                &:hover {
+                    .icon-bar {
+                        background: #fff !important;
+                    }
+                }
+                span {
+                    background-color: #333;
+                }
+            }
             a {
                 img {
                     opacity: .8;
@@ -69,6 +79,9 @@ nav.navbar {
             }
         }
         .collapse {
+            @media(max-width: 768px) {
+                background: rgba(0,0,0,.6);
+            }
             ul {
                 padding-top: 15px;
                 li {
