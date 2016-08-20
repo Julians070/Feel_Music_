@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#index'
   get 'about' => 'contact#about'
   get 'service' => 'contact#service'
+  get 'videos' => 'videos#index'
+  get 'audios' => 'audios#index'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
