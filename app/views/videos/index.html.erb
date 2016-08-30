@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Videos</h1>
-<p>Esta secion co</p>
+<h1 class="tittle">Videos</h1>
 <div class="col-md-12" align="center" id="video">
 <%= link_to 'New Video', new_video_path %>
 <table>
@@ -9,13 +8,13 @@
   <tbody>
     <% @videos.each do |video| %>
       <tr>
-
-        <td><h3><%= video.name %></h3><iframe width="700" height="300" src="<%= "http://www.youtube.com/embed/"+video.url %>"></iframe><p>Descripcion </p> <p> <br><%= video.description %></p><%= link_to 'Show', video, class:"btn btn-primary" %><%= link_to 'Edit', edit_video_path(video), class:"btn btn-warning" %><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+        <td><h3><%= video.name %></h3><iframe width="700" height="300" src="<%= "http://www.youtube.com/embed/"+video.url %>"></iframe><p>Descripcion </p> <p id="descripcion"> <%= video.description %></p><%= link_to 'Show', video, class:"btn btn-primary" %><%= link_to 'Edit', edit_video_path(video), class:"btn btn-warning" %><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 </div>
 
-<br>
+
+
 
