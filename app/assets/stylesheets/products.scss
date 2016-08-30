@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
 #imagenes { 
     padding: 10px;
     table {
@@ -22,4 +24,13 @@
     		}
     	}
     }
+}
+
+.modal-content {
+    width: 269%
+}
+
+
+.container {
+  padding-top: 65px;
 }
