@@ -1,10 +1,10 @@
 <body>
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Audios</h1>
+<h1>Audios</h1>
 
 <table>
-<%= link_to 'New Audio', new_audio_path %>
+
 
   <tbody>
     <% @audios.each do |audio| %>
@@ -12,14 +12,13 @@
     <td>
       <%#= image_tag(audio.url_audio, class: 'list_image')%>
       <%= soundcloud(audio)%>
+        <%= link_to 'Show', audio, class:"btn btn-primary" %>
+        <%= link_to 'Edit', edit_audio_path(audio), class:"btn btn-warning"  %>
+        <%= link_to 'New Audio', new_audio_path, class: 'btn btn-success' %>
+        <%= link_to 'Destroy', audio, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
     </td>
 
-      <tr>
 
-        <td><%= link_to 'Show', audio %></td>
-        <td><%= link_to 'Edit', edit_audio_path(audio) %></td>
-        <td><%= link_to 'Destroy', audio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
 
     <% end %>
   </tbody>
