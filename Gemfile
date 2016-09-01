@@ -28,6 +28,9 @@ gem 'paperclip', '~> 4.2.1'
 gem 'soundcloud'
 gem "font-awesome-rails"
 
+gem 'devise'
+gem 'activeadmin', github: 'activeadmin'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
