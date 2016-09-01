@@ -16,12 +16,7 @@
 				        <p>Descripcion </p> 
 				        <p id="descripcion"> <%= video.description %></p>
 			        </div>
-			      	<div class="enlaces">
-			      		<%= link_to 'Show', video, class:"btn btn-primary" %>
-				        <%= link_to 'Edit', edit_video_path(video), class:"btn btn-warning" %>
-				        <%= link_to 'New Video', new_video_path, class:"btn btn-success" %>
-				        <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
-			      	</div>
+			      	
 		        </td>
 		      </tr>
 		    <% end %>
