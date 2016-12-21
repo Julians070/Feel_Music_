@@ -12,7 +12,9 @@
 		        <td>
 			        <div class="col-xs-12">
 			        	<h3><%= video.name %></h3>
-			        	<iframe width="700" height="450" src="<%= "http://www.youtube.com/embed/"+ video.url %>"></iframe>
+			        	<div class="video-container">
+			        	<iframe width="700" height="450" src="<%= "https://www.youtube.com/embed/"+ video.url %>"></iframe>
+			        	</div>
 				        <p>Descripcion </p> 
 				        <p id="descripcion"> <%= video.description %></p>
 			        </div>
