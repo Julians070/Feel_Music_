@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 	<div class="container">
-		<h1 class="tittle">Videos</h1>
+		<h1 class="tittle" style="font-family: fantasy">Videos</h1>
 		<div class="col-md-12" align="center" id="video">
 
 		<table class="videos">
@@ -11,11 +11,11 @@
 		      <tr>
 		        <td>
 			        <div class="col-xs-12">
-			        	<h3><%= video.name %></h3>
+			        	<h3 style="font-family: fantasy"><%= video.name %></h3>
 			        	<div class="video-container">
 			        	<iframe width="700" height="450" src="<%= "https://www.youtube.com/embed/"+ video.url %>"></iframe>
 			        	</div>
-				        <p>Descripcion </p> 
+				        <p style="font-family: fantasy"> Descripcion  </p> 
 				        <p id="descripcion"> <%= video.description %></p>
 			        </div>
 			      	
